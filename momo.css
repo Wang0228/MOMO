@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a,p{
+    font-family: "Microsoft JhengHei", sans-serif;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.list ul{
+    display: flex;
+}
+.list a{
+    color: black;
+    font-size: 13px;
+}
+.list li{
+    margin: auto;
+    margin-left: 10px;
+}
+.list li+li::before{
+    content: '|';
+    padding-right: 8px;
+}
+.wrap{
+    width: 1220px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+
+.bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    background-color: #ececec;
+    position: fixed;
+    z-index: 1;
+}
+.options{
+    display: flex;
+}
+.options:first-child li:first-child::before{
+    content: '';
+    display: inline-block;
+    background-image: url(https://image.momoshop.com.tw/ecm/img/cmm/icon_home01.png);
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+}
+.options button{
+    width: 50px;
+    height: 22px;
+    background-color: white;
+    border-radius: 5px;
+    border: gray 1px solid;
+    font-size: 13px;
+    margin:10px 0 0 5px;
+}
+.title{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.title img:first-child{
+    width: 270px;
+    height: 120px;
+}
+.find{
+    margin: 0 70px;
+}
+.search{
+    position: relative;
+    width: 440px;
+    margin: 40px 5px 10px;
+}
+input[type="text"]{
+    border-radius: 100px;
+    border: 2px #515151 solid;
+    height: 37px;
+    width: 437px;
+}
+.search button{
+    border-radius: 100px;
+    border: 2px #515151 solid;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #515151;
+}
+.search_hot a{
+    color: #d62872;
+}
+.welfare{
+    display: flex;
+    justify-content: end;
+}
+.welfare ul{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.welfare img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.DM_background{
+    background-color: pink;
+}
+.DM{
+    display: flex;
+    position: relative;
+}
+.DM_top{
+    padding-left: 20px;
+    background-color: #515151;
+    padding-top: 5px;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    top: -27px;
+    width: 180px;
+}
+.DM_top p::before{
+    content: " ";
+    display: inline-block;
+    width: 18px;
+    margin-right: 8px;
+    border-top: 2px solid white;
+    border-radius: 100px;
+    box-shadow: 0 -5px 0 0,
+                0 -10px 0 0;
+}
+.DM_left{
+    width: 200px;
+    height: 500px;
+    background-image: linear-gradient(#2C2C2C ,#515151 7%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: top;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.DM_left a{
+    color: #ffffff;
+    font-size: 14px;
+}
+.line{
+    width: 90%;
+    height: 1px;
+    border-top: 1px solid #626262;
+    margin: 0 auto;
+}
+.DM_mid img{
+    width: 820px;
+    height: 370px;
+}
+.DM_right{
+    width: 200px;
+    height: 350px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.DM_title{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ECECEC;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+.DM_title p{
+    margin: 5px;
+    font-weight: 700;
+}
+.DM_title li{
+    background-color: #aaa;
+    width: 15px;
+    height: 15px;
+    margin: 10px 2px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+.change ul{
+    list-style: none;
+    display: flex;
+}
+.today img{
+    width: 200px;
+    height: 100px;
+    vertical-align: bottom;
+}
+.today2{
+    display: none;
+}
+.today3{
+    display: none;
+}
+
+
